@@ -4,6 +4,8 @@ void main(List<String> args) => runApp(const MaterialApp(
       home: Home(),
     ));
 
+const String rocketWallpaperUrl = 'https://i.imgur.com/pFMWm6g.jpg';
+
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -24,6 +26,9 @@ class Home extends StatelessWidget {
             Text('First Text'),
             Text('Second Text'),
             Text('Third Text'),
+            Image(
+              image: NetworkImage(rocketWallpaperUrl),
+            ),
           ],
         ),
       ),
