@@ -5,7 +5,7 @@ void main() => runApp(MaterialApp(
         appBar: AppBar(
           title: const Text(
             'First Project',
-            style: TextStyle(fontFamily: 'Arima'),
+            style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Arima'),
           ),
           centerTitle: true,
           backgroundColor: Colors.purple[400],
@@ -25,3 +25,12 @@ void main() => runApp(MaterialApp(
         ),
       ),
     ));
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
