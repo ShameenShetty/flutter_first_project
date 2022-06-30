@@ -20,16 +20,27 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.purple[400],
       ),
-      body: Center(
-        child: Column(
-          children: const [
-            Text('First Text'),
-            Text('Second Text'),
-            Text('Third Text'),
-            Image(
-              image: NetworkImage(rocketWallpaperUrl),
-            ),
-          ],
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              Text('First Text'),
+              Text('Second Text'),
+              Text('Third Text'),
+              Image.network(rocketWallpaperUrl),
+              ElevatedButton(
+                onPressed: () {
+                  print("you clicked on the elevated button");
+                },
+                child: Icon(Icons.mail),
+              ),
+              IconButton(
+                  onPressed: () {
+                    print("you pressed the icon button\n");
+                  },
+                  icon: Icon(Icons.dataset_linked_rounded))
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
