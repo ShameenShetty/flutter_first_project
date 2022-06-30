@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 void main() => runApp(MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('First Project'),
+          title: const Text(
+            'First Project',
+            style: TextStyle(fontFamily: 'Arima'),
+          ),
           centerTitle: true,
           backgroundColor: Colors.purple[400],
         ),
