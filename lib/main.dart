@@ -35,10 +35,11 @@ class Home extends StatelessWidget {
                 child: Icon(Icons.mail),
               ),
               IconButton(
+                  iconSize: 50.0,
                   onPressed: () {
                     print("you pressed the icon button\n");
                   },
-                  icon: Icon(Icons.dataset_linked_rounded))
+                  icon: const Icon(Icons.addchart_rounded))
             ],
           ),
         ),
